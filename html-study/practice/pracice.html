@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+</head>
+<body>
+<h1>HTML</h1>
+
+<h2>HTML의 정의</h2>
+
+<p>HTML의 정의
+    HTML (HyperText Markup Language)는 <br>
+    웹 페이지의 구조(Structure)를 정의하기 위한 마크업 언어입니다. <br>
+    HTML, CSS, JavaScript 등 웹 기술에 대한 공식 문서와 예제를 제공하는 웹사이트는 <a href="https://developer.mozilla.org/ko/">MDN</a>을 클릭하세요.
+</p>
+
+    <h2>오늘 배운 내용</h2>
+    <ul>
+        <li>텍스트 요소</li>
+        <li>목록과 링크</li>
+        <li>이미지와 미디어</li>
+        <li>표와 폼</li>
+    </ul>
+
+    <h2>텍스트 요소</h2>
+    <ul>
+        <li>제목 태그 (h1~h6)와 콘텐츠 계층 구조</li>
+        <p>콘텐츠의 제목이나 주제를 계층적으로 표현하는 태그로, 숫자가 작을수록 중요도와 글씨 크기가 크다.</p>
+        <li>단락 태그 p</li>
+        <p>문장을 하나의 단락(문단)으로 묶어주는 태그로, 브라우저에서 자동으로 줄바꿈과 여백을 적용한다.</p>
+        <li>줄바꿈 태그 br</li>
+        <p>강제 줄바꿈을 삽입할 때 사용하는 태그로,<br>
+            문장을 끊지 않고 줄만 바꿔준다.</p>
+        <li>구분선 태그 hr</li>
+        <p>내용 사이에 주제의 전환이나 구분을 나타낼 때 사용하는 수평선(horizontal rule) 태그로,
+        <hr>시각적으로 선을 삽입한다.</p>
+        <li>엔티티 코드</li>
+        <p>&lt;브라우저에서 특수 문자(예: <, >, &, 공백 등)를 올바르게 표시하기 위해 사용하는 문자 코드 표현 방식이다.&gt;</p>
+    </ul>
+
+    <h2>목록과 링크</h2>
+    <ul>
+        <li>순서 없는 목록 태그</li>
+        <p>&lt;ul&gt;은 항목들을 • (불릿) 기호로 나열하는 순서 없는 리스트를 만드는 블록 요소입니다.</p>
+    </ul>
+    <ol>
+        <li>순서 있는 목록 태그</li>
+        <p>&lt;ol&gt;은 항목들을 1, 2, 3... 과 같은 번호로 자동 정렬해 주는 순서 있는 목록을 만드는 블록 요소입니다.</p>
+    </ol>
+    <ul>
+        <li>목록 항목 태그</li>
+        <p>&lt;li&gt;는 &lt;ul&gt;이나 &lt;ol&gt; 내부에서 실제 항목 하나를 나타내는 블록 요소입니다.</p>
+        <li> 하이퍼링크 (a)</li>
+        <p><a href="https://velog.io/">TJK 벨로그로 이동</a></p>
+    </ul>
+
+    <h2>이미지</h2>
+    <ul>
+        <ls>이미지 삽입하기</ls>
+        <p><img src="https://velog.velcdn.com/images/wtj1998/profile/499824ff-8ed9-4002-8de0-d233033bd47a/image.png"
+         alt="TJK 벨로그 사진" width="500" height="500"></p>
+    </ul>
+
+    <h2>표와 폼</h2>
+    <ul>
+        <ls>table</ls>
+        <p>표 전체를 감싸는 태그로, 행과 열 구조를 정의하는 컨테이너 역할을 한다.</p>
+        <ls>tr</ls>
+        <p>표의 한 가로줄(행, row)을 나타내는 태그로, 그 안에 셀들이 위치한다.</p>
+        <ls>td</ls>
+        <p>표의 일반 데이터 셀(열, column)을 나타내는 태그로, 실제 값을 담는다.</p>
+        <ls>th</ls>
+        <p>표의 헤더 셀로, 굵은 글씨와 가운데 정렬이 적용되는 제목용 셀이다.</p>
+        <table>
+            <tr>
+                <th>table</th>
+                <th>tr</th>
+                <th>td</th>
+                <th>th</th>
+            </tr>
+        </table>
+        <ls>폼 요소 form</ls>
+        <p>사용자의 입력 데이터를 서버로 전송하기 위한 입력 영역(Form)을 정의하는 태그이다.</p>
+        <form action="https://www.google.com/search?q=" method="get">
+            <input type="text" name="q" placeholder="검색어 입력">
+            <button type="submit">검색</button>
+        </form>
+        <ls>input 태그와 type 속성</ls>
+        <p>사용자의 다양한 입력을 수집하기 위해 사용하는 태그로, type 속성에 따라 동작과 모양이 달라진다.</p>
+        <p>풀스텍:</p>
+        <input type="checkbox" id="tech" name="interest" value="technology">
+        <label for="tech">back</label><br>
+
+        <input type="checkbox" id="science" name="interest" value="science">
+        <label for="science">front</label><br>
+
+        <input type="checkbox" id="science" name="interest" value="science">
+        <label for="science">app</label><br>
+
+        <input type="checkbox" id="science" name="interest" value="science">
+        <label for="science">web</label><br>
+
+        <label for="message">?</label>
+        <textarea id="message" name="message" rows="5" cols="30">
+선택한 이유가 뭔가요?
+        </textarea>
+    </ul>
+
+
+</body>
+</html>
