@@ -1,0 +1,61 @@
+li {
+    color: olive;
+    font-size: 16px;
+}
+.Class-Selector {
+    color: olivedrab;
+    font-size: 18px;
+}
+#ID-Selector {
+    color: darkolivegreen;
+    font-size: 20px;
+}
+input[type] {
+    color: green;
+}
+input[maxlength] {
+    font-size: 18px;
+}
+input[minlength] {
+    font-size: 14px;
+}
+a:hover {
+    color: orange;
+}
+p {
+    color: olive;
+}
+.pcs {
+    color: yellow;
+}
+#Pseudo-class {
+    color: greenyellow;
+}
+.Color-Names {
+    color: red;
+}
+.HEX-Color {
+    color: #ffa500;
+}
+.RGB-Color {
+    color: rgb(255, 255, 0);
+}
+.RGBA-Color {
+    color: rgba(0, 255, 0, 1);
+}
+.HSL-Color {
+    color: hsl(240, 100%, 50%);
+}
+.px {
+    font-size: 12px;
+}
+.em {
+    font-size: 1.5em;
+}
+.rem {
+    font-size: 2rem;
+}
+.percent {
+    width: 50%;
+    padding: 5%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <link rel="stylesheet" href="CSS-practice.css">
+</head>
+<body>
+
+    <h1>CSS</h1>
+    <p>CSS(Cascading Style Sheets)는 HTML 요소의 시각적 표현을 제어하는 스타일 지정 언어이다.</p>
+    <h1>HTML과 CSS의 통합 방법</h1>
+    <ol>
+        <li>인라인 스타일 (Inline Style): HTML 태그 내부의 style 속성으로 직접 스타일을 지정하는 방식이다.</li>
+        <li>내부 스타일 시트 (Internal Style Sheet): HTML 문서의 head 안에 style 태그로 작성된 스타일이다.</li>
+        <li>외부 스타일 시트 (External Style Sheet): .css 파일에 작성된 스타일을 link 태그로 HTML 문서에 불러오는 방식이다.</li>
+    </ol>
+    <h1>기본 선택자 (태그, 클래스, ID 선택자), <br>
+        속성 선택자 (기본 속성, 특정 값 속성), 가상 클래스 선택자
+    </h1>
+    <p>
+        기본 선택자 (Basic Selectors): HTML 요소를 태그 이름, ID, 클래스에 따라 선택하여 스타일을 적용하는 CSS 선택자이다.
+    </p>
+    <ol>
+        <li>태그 선택자 (Tag Selector): HTML의 특정 태그 전체에 스타일을 적용하는 선택자이다.</li>
+        <li class="Class-Selector">
+            클래스 선택자 (Class Selector): 하나 이상의 요소에 공통 스타일을 적용할 때 사용하는 선택자이다.
+        </li>
+        <li ID="ID-Selector">
+            ID 선택자 (ID Selector): 문서 내 유일한 특정 요소 1개에만 스타일을 적용할 때 사용하는 선택자이다.
+        </li>
+        <p>우선 순위: ID 선택자>클래스 선택자>태그 선택자</p>
+    </ol>
+    <p>속성 선택자 (Attribute Selector): HTML 요소가 가진 특정 속성 또는 속성값을 기준으로 스타일을 적용할 수 있는 CSS 선택자이다.</p>
+    <ul>
+        <p class="Attribute-Selector">
+            <a href="#">기본 속성 선택자 (Existence Attribute Selector)</a>
+            : 특정 속성이 "존재하기만" 하면 해당 요소를 선택하는 선택자이다. <br>
+            <input type="text" value="특정 값 속성 선택자" maxlength="10">
+            <input type="text" value="(Attribute Value Selectors)" minlength="1">
+            : 속성값이 특정 조건을 "정확히 만족"하거나 "포함"될 경우에만 선택되는 선택자이다. <br>
+        </p>
+    </ul>
+    <p ID="Pseudo-class" class="pcs">가상 클래스 선택자(Pseudo-class Selector): HTML 요소의 특정 "상태"나 "위치"에 따라 스타일을 적용할 수 있는
+        선택자이다.
+    </p>
+    <h1>색상과 단위</h1>
+    <p>색상 표현 방식</p>
+    <ol>
+        <li class="Color-Names">색상 이름 (Color Names): CSS에 내장된 색상 이름 키워드를 사용하여 색상을 지정하는 방식이다.</li>
+        <li class="HEX-Color">HEX 색상 (HEX Color): HEX 색상은 16진수(Hexadecimal)로 표현된 색상 코드로, HTML/CSS에서 색상을 정확하게 지정하는 방식이다.</li>
+        <li class="RGB-Color">RGB 색상 (RGB Color): RGB 색상은 빨강(R), 초록(G), 파랑(B)의 빛의 강도를 조합하여 색상을 표현하는 방식이다.</li>
+        <li class="RGBA-Color">RGBA 색상 (RGBA Color): RGBA는 RGB 색상에 A(Alpha, 투명도) 값을 추가한 색상 표현 방식이다.</li>
+        <li class="HSL-Color">HSL 색상 (HSL Color): HSL은 색상을 "색조(Hue), 채도(Saturation), 밝기(Lightness)"로 표현하는 방식이다.</li>
+    </ol>
+    <p>CSS의 단위</p>
+    <ol>
+        <li class="px">픽셀 (px): 절대 단위로, 화면 상의 정확한 픽셀 수를 의미한다.</li>
+        <li class="em">상대 단위 em: 부모 요소의 글자 크기(font-size)를 기준으로 상대적으로 계산되는 단위이다.</li>
+        <li class="rem">상대 단위 rem: 루트 요소(html)의 글자 크기를 기준으로 계산되는 상대 단위이다.</li>
+        <li class="percent">퍼센트 (%): 부모 요소를 기준으로 상대적인 크기를 지정한다.</li>
+    </ol>
+
+</body>
+</html>
