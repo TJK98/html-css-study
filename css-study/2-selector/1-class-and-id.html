@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
   <style>
-    .re {
-      color: red;
-    }
     #grape {
       color: blueviolet;
     }
     .or {
       color: orange;
     }
-
+    .big {
+      font-size: 1.5em;
+    }
+    .highlight {
+      text-shadow: 2px 2px 5px tomato;
+    }
   </style>
 </head>
 <body>
   <div>
     <ul>
-      <li class="re">사과</li>
-      <li id="grape">포도</li>
+      <li class="highlight">사과</li>
+      <li id="grape" class="big highlight">포도</li>
       <li class="or">오렌지</li>
     </ul>
-    <div>당근</div>
-    <p class="re">토마토</p>
-    <span class="or">오랑지</span>
+    <div class="highlight">당근</div>
+    <p>토마토</p>
+    <span class="or big">오랑지</span>
   </div>
 </body>
 </html>
