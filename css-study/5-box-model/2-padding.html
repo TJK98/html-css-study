@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+
+        *{
+            /**은 전체 선택자 = 모든 태그에 스타일 적용*/
+            box-sizing: border-box;
+        }
+        .container {
+            width: 500px;
+            height: 500px;
+            background: orange;
+            margin: 100px;
+
+            /*패딩을 사용하면 박스의 크기가 패딩만큼 커진다.*/
+            padding-top: 40px;
+            padding-left: 30px;
+            /*자동으로 박스 사이즈 조정 까먹을 수도 있기 때문에 전체 선택자에 적용 하면 좋음
+            /*box-sizing: border-box;*/
+
+            /*width: 460px; <-패딩 한 만큼 빼주면 사이즈 유지*/
+            /*height: 4700px; <-패딩 한 만큼 빼주면 사이즈 유지*/
+            /*background: orange;*/
+            /*margin: 100px;*/
+
+            /*!*패딩을 사용하면 박스의 크기가 패딩만큼 커진다.*!*/
+            /*padding-top: 40px;*/
+            /*padding-left: 30px;*/
+        }
+        .box {
+            /*width: 100%; 기본 설정이 100%라서 안 넣어도 상관 없음*/
+            height: 50%;
+            background: tomato;
+            font-size: 2rem;
+            color: #fff;
+            /*패딩도 마진처럼 자동 완성 기능 있음 상하 좌우 등등*/
+            padding: 20px;
+        }
+        /*p {*/
+        /*    border: solid blue;*/
+        /*    width: 50%;*/
+        /*    height: 25%;*/
+        /*    margin: 20px auto;*/
+        /*    font-size: 1.5rem;*/
+        /*    padding: 15px;*/
+        /*    text-align: justify;*/
+        /*    line-height: 1.4;*/
+        /*}*/
+        .card {
+            width: 250px;
+            height: 350px;
+            border: 2px solid gray;
+            margin-left: auto;
+            margin-right: auto ;
+            margin-top: 70px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .card .image {
+            width: 100%;
+            height: 250px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card .image img {
+            width: 100%;
+            height: 100%;
+        }
+        .card .text {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="image">
+            <img src="https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/149/93bac95b6e6c4f4189961b2b2028c6ee_res.jpeg" alt="dd">
+        </div>
+        <p class="text">
+            김지수
+        </p>
+    </div>
+
+<!--<p>국가는 모성의 보호를 위하여 노력하여야 한다. 재산권의 행사는 공공복리에 적합하도록 하여야 한다. 혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 의원을 제명하려면 국회재적의원 3분의 2 이상의 찬성이 있어야 한다. 탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.&ndash;&gt;-->
+
+<!--        형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다. 국가는 지역간의 균형있는 발전을 위하여 지역경제를 육성할 의무를 진다. 선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다.</p>-->
+    <div class="container">
+        <div class="box">안녕안녕</div>
+    </div>
+
+</body>
+</html>
