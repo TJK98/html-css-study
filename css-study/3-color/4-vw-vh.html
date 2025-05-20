@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+  <style>
+    .box {
+      background: tomato;
+      /* width의 기본 값은 100% 부모 (body) 대비 퍼센트, 전체 화면 비율 아님 */
+      width: 100%;
+      /* height의 기본 값은 0이라서 처음에 % 설정을 해도 안 보인다 */
+      height: 50vh;
+    }
+    .item {
+      background: aqua;
+      /* width: 50%; 부모 대비 퍼센트 (div.box), 전체 화면 비율 아님 */
+      width: 70vw;
+      /* 부모의 높이가 설정이 되어 %를 해도 부모의 길이의 영향을 받아 길이가 나온다 */
+      height: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item"></div>
+  </div>
+</body>
+</html>
