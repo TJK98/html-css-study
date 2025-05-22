@@ -1,0 +1,287 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="ko">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Title</title>-->
+<!--  <link rel="stylesheet" href="../5-box-model/common.css">-->
+<!--  <style>-->
+<!--    section {-->
+<!--      width: 1200px;-->
+<!--      /*padding: 15px;*/-->
+<!--      height: 600px;-->
+<!--      border: 2px solid cadetblue;-->
+<!--      background: lightgray;-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+
+<!--    }-->
+<!--    h1 {-->
+<!--      display: flex;-->
+<!--      flex-direction: row;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--    }-->
+<!--    .main-title {-->
+<!--      height: 15%;-->
+<!--      font-size: 30px;-->
+<!--      /*border: 2px solid red;*/-->
+<!--      font-weight: 700;-->
+<!--      text-align: center;-->
+
+<!--    }-->
+<!--    .sub-title {-->
+<!--      /*border: 2px solid yellow;*/-->
+<!--      text-align: center;-->
+<!--      color: white;-->
+<!--      background: black;-->
+<!--    }-->
+<!--    span {-->
+<!--      color: yellow;-->
+<!--    }-->
+<!--    .flowers {-->
+<!--      /*width: 80%;*/-->
+<!--      padding: 15px;-->
+<!--      background: dimgray;-->
+<!--      /*border: 2px solid orange;*/-->
+<!--      display: flex;-->
+<!--      flex-direction: row;-->
+<!--      justify-content: space-evenly;-->
+<!--    }-->
+<!--    .flowers li {-->
+<!--      width: 24%;-->
+<!--      /*border: 3px solid;*/-->
+<!--    }-->
+<!--    .tulip {-->
+<!--      /*border: 2px solid green;*/-->
+<!--      background: red;-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      justify-content: flex-start;-->
+<!--      align-items: center;-->
+<!--    }-->
+<!--    .violet {-->
+<!--      /*border: 2px solid blue;*/-->
+<!--      background: violet;-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      justify-content: flex-start;-->
+<!--      align-items: center;-->
+<!--    }-->
+<!--    .courgette {-->
+<!--      /*border: 2px solid purple;*/-->
+<!--      background: orange;-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      justify-content: flex-start;-->
+<!--      align-items: center;-->
+<!--    }-->
+<!--    .sunflower {-->
+<!--      /*border: 2px solid hotpink;*/-->
+<!--      background: yellow;-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--      justify-content: flex-start;-->
+<!--      align-items: center;-->
+<!--    }-->
+<!--    .pic {-->
+<!--      width: 120px;-->
+<!--      height: 80px;-->
+<!--      /*border: 2px solid black;*/-->
+<!--    }-->
+<!--    img {-->
+<!--      width: 100%;-->
+<!--      height: 100%;-->
+<!--    }-->
+<!--    p {-->
+
+<!--    }-->
+
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--  <section>-->
+<!--    <h1 class="main-title">나의 아름다운 정원</h1>-->
+<!--    <h2 class="sub-title">사람들은 아마 자신에게 <span>자심감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>-->
+<!--    <ul class="flowers">-->
+<!--      <li class="tulip">-->
+<!--        <div class="pic">-->
+<!--        <img src="https://i.namu.wiki/i/7yvv0KMazPnpit1uNGMZl4SukTxgt0_13A5CrfyLePoEITLMksSOJOY9ijZW5WR9HTV-Z2RriBgdn67x3X5SRQ.webp" alt="튤립">-->
+<!--        </div>-->
+<!--        <p>-->
+<!--          튤립 은 Tulipa 속의 봄에 피는 다년생 초본 구근 형 지생식물 입니다. 꽃은 보통 크고 화려하며 밝은 색을 띠며 일반적으로 빨간색, 주황색, 분홍색, 노란색 또는 흰색입니다.-->
+<!--        </p>-->
+<!--      </li>-->
+<!--      <li class="violet">-->
+<!--        <div class="pic">-->
+<!--        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LhMAlfl2xsJdVVV_EsnicI_hrT8wRrzRFQ&s" alt="제비꽃">-->
+<!--        </div>-->
+<!--        <p>-->
+<!--          제비꽃은 제비꽃과에 속하는 여러해살이풀로, 4~5월에 짙은 자주색 꽃이 핍니다. 잎은 뿌리에서 모여나며, 어린잎은 식용할 수 있습니다.-->
+<!--        </p>-->
+<!--      </li>-->
+<!--      <li class="courgette">-->
+<!--        <div class="pic">-->
+<!--        <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202407/30/c15863ab-9115-47a7-a87e-1cca0aee7934.jpg" alt="호박꽃">-->
+<!--        </div>-->
+<!--        <p>-->
+<!--          호박꽃은 덩굴이 있는 식물인 호박에서 피는 꽃으로, 암꽃과 수꽃이 따로 핀다. 암꽃은 열매를 맺는 꽃으로, 작은 호박이 꽃 밑에 달려 있는 것이 특징이다.-->
+<!--        </p>-->
+<!--      </li>-->
+<!--      <li class="sunflower">-->
+<!--        <div class="pic">-->
+<!--          <img src="https://i.namu.wiki/i/vDpd0CaQ-5cgC_CYSebzG3TK7s7NYZCoYANi7aGQpT2lcq1DBrNUyzsVGB7wBVlN246LzPrf7TdlPHedfWvNHg.webp" alt="해바라기">-->
+<!--        </div>-->
+<!--        <p>-->
+<!--          해바라기는 일년생 식물로, 중앙아메리카가 원산지입니다. 관상용으로 많이 재배되며, 노란색의 꽃이 태양을 향해 핀다는 특징 때문에 붙여진 이름입니다.-->
+<!--        </p>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </section>-->
+
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <link rel="stylesheet" href="../5-box-model/common.css">
+  <style>
+    img {
+      /*display: none;*/
+      /*opacity: 0.6;*/
+    }
+
+    .container {
+      width: 60%;
+      border: 3px double #123456;
+      margin: 50px auto;
+    }
+    .container .main-title {
+      background: #ccc;
+      font-size: 3em;
+      font-weight: 700;
+      text-align: center;
+      padding: 20px 0;
+      font-family: "궁서체", cursive;
+    }
+    .container .sub-title {
+      font-size: 1.2em;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 2px solid #ccc;
+    }
+    .container .sub-title .yellow {
+      font-size: 1.1em;
+      color: #ff0;
+    }
+    .container .gallery {
+      background: #6a6a6a;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .container .gallery li {
+      background: #fff;
+      /*border: 2px solid red;*/
+      width: 24%;
+      height: 40rem;
+      padding: 7px;
+    }
+    .container .gallery li .img-box {
+      height: 50%;
+      background: violet;
+      border: 1px solid #000;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .container .gallery li .img-box img {
+      height: 100%;
+    }
+
+    .container .gallery li p {
+      font-size: 1.2em;
+      font-weight: 700;
+      padding: 10px;
+      line-height: 1.4;
+      text-align: justify;
+      color: #333;
+    }
+    .container .gallery .tulip {
+      background: #d31515;
+    }
+    .container .gallery .jebi {
+      background: #e941f9;
+    }
+    .container .gallery .hobak {
+      background: #f2692b;
+    }
+    .container .gallery .sunflower {
+      background: #f3ea33;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <h1 class="main-title">나의 아름다운 정원</h1>
+    <h2 class="sub-title">
+      사람들은 아마 자신에게
+      <span class="yellow">자신감을 북돋워 주는</span>
+      표정 있는 꽃들을 선호할 것이다.
+    </h2>
+    <ul class="gallery">
+      <li class="tulip">
+        <div class="img-box">
+          <img src="https://i.namu.wiki/i/7yvv0KMazPnpit1uNGMZl4SukTxgt0_13A5CrfyLePoEITLMksSOJOY9ijZW5WR9HTV-Z2RriBgdn67x3X5SRQ.webp"
+               alt="튤립">
+        </div>
+        <p>
+          너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+          붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+        </p>
+      </li>
+
+      <li class="jebi">
+        <div class="img-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LhMAlfl2xsJdVVV_EsnicI_hrT8wRrzRFQ&s"
+               alt="제비꽃">
+        </div>
+        <p>
+          드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+          어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+      </li>
+      <li class="hobak">
+        <div class="img-box">
+          <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202407/30/c15863ab-9115-47a7-a87e-1cca0aee7934.jpg"
+               alt="호박꽃">
+        </div>
+        <p>
+          색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+          매우 완숙한 이미지를 풍기는 꽃이다.
+        </p>
+      </li>
+      <li class="sunflower">
+        <div class="img-box">
+          <img src="https://i.namu.wiki/i/vDpd0CaQ-5cgC_CYSebzG3TK7s7NYZCoYANi7aGQpT2lcq1DBrNUyzsVGB7wBVlN246LzPrf7TdlPHedfWvNHg.webp"
+               alt="해바라기">
+        </div>
+        <p>
+          태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+          속하며 송이가 적어야 제격이다.
+        </p>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
