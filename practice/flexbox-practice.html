@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 연습</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            width: 250px;
+            height: 200px;
+            background-color: lightgray;
+        }
+
+        .item{
+            width: 120px;
+            height: 60px;
+            background-color: orange;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .b {
+            align-self: flex-end;
+        }
+
+        .c {
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item a">A</div>
+        <div class="item b">B</div>
+        <div class="item c">C</div>
+    </div>
+
+</body>
+</html>
