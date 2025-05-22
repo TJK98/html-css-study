@@ -15,6 +15,10 @@ html {
 body {
     /*line-height: 1.4;*/
     /*font-family: '궁서', '궁서체', 'GungSeo', cursive;*/
-    /*font-size: 18px;*/
+    font-size: 18px;
     /*color: #999;*/
+}
+a {
+    color: inherit;
+    text-decoration: none;
 }
