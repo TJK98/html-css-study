@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css-study/5-box-model/common.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        section {
+            background: dimgray;
+
+        }
+
+        header {
+            /*border: 2px solid black;*/
+            width: 100%;
+            position: fixed;
+            border-bottom: 2px solid black;
+            z-index: 9999;
+        }
+
+        header ul {
+            height: 5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            /*position: absolute;*/
+            position: relative;
+        }
+
+        main {
+            height: 90em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*position: absolute;*/
+        }
+
+        main .TJK {
+            width: 25em;
+            height: 25em;
+            display: flex;
+            flex-direction: column;
+            /*justify-content: space-between;*/
+            margin-bottom: 100px;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        footer {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        li {
+            font-size: 1.2em;
+        }
+
+        ul .logo {
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+
+        }
+
+        ul .logo-image {
+            /*order: 0;*/
+        }
+
+        ul .search {
+            /*order: -1;*/
+        }
+
+        ul .login {
+            /*order: 1;*/
+        }
+
+        .search-text {
+            width: 50em;
+        }
+
+        .id-text {
+            width: 6em;
+            background: lightgray;
+            border: none;
+            border-radius: 15%;
+        }
+
+        .pw-text {
+            width: 8em;
+            background: lightgray;
+            border: none;
+            border-radius: 15%;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+
+        <header>
+            <ul>
+                <li class="logo">
+                    <img class="logo-image" src="https://www.super-hobby.dk/zdjecia/3/1/0/47092_rd.png" alt="black">
+                </li>
+                <li class="search">Search : <input class="search-text" type="search" value="검색어를 입력하세요."></li>
+                <li class="login">
+                    <input class="id-text" type="text" value="ID" minlength="5" maxlength="15">
+                    <input class="pw-text" type="password" min="10" maxlength="20">
+                    <input type="button" value="Login">
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="TJK"><img src="TJK.jpg" alt="TJK"></div>
+            <p>
+                안녕하세요. 저는 TJK 입니다. 지금은 CSS 연습 중 입니다. FlexBox와 Position에 대해 공부하고 연습 하고 있습니다.
+            </p>
+        </main>
+
+        <footer>
+            <p class="today">
+                2025년 05월 22일 목요일
+            </p>
+        </footer>
+
+    </section>
+
+</body>
+</html>
