@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .box {
+            width: 955px;
+            height: 650px;
+            border: 4px dashed orange;
+            margin: 800px auto;
+            /*background-color: #000; */
+            /*자동으로 img+overflow hidden 적용*/
+            /*원본 사이즈 855*485*/
+            background-image: url("https://kokokaki.github.io/img/blog_1.png");
+
+            /*이미지 사이즈 조절 가로 세로*/
+            /*background-size: 200px 100px;*/
+            /*background-size: contain; 이미지 사이즈 가로 길이 맞춰줌*/
+            /*background-size: cover; 이미지 사이즈 꽉 채워줌*/
+            background-size: cover;
+
+            /*이미지 반복 설정*/
+            /*x축으로만 반복하세요 background-repeat: repeat-x;*/
+            /*y축으로만 반복하세요 background-repeat: repeat-y;*/
+            /*반복하지 마세요 background-repeat: no-repeat;*/
+            background-repeat: no-repeat;
+
+            /*이미지 위치 설정 x축 y축*/
+            background-position: 50px 0;
+            /*background-position: left top;*/
+            /*background-position: center right;*/
+            /*background-position: center;*/
+
+            /*적당히 사진 사이즈 맞추고 싶을 때*/
+            /*background-size: cover;*/
+            /*background-position: center;*/
+
+            /*이미지 고정 속성*/
+            background-attachment: fixed;
+
+            /*단축 속성 위치 / 사이즈*/
+            background: fixed url("https://mblogthumb-phinf.pstatic.net/MjAxODA0MjhfMjQ3/MDAxNTI0ODgxODM2ODg4.qQGPRwKWHTgq1R2XIx2f5hNExkrL60L4xuB08IW5gC0g.Zbu_z7BSjkCeoCeylaV4QmMyHiBAIZSIN87H8ob3eLIg.JPEG.ichufs/IMG_8931s.jpg?type=w800") center / cover no-repeat;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+<!--        <img src="https://kokokaki.github.io/img/blog_1.png" alt="">-->
+    </div>
+    
+
+</body>
+</html>
